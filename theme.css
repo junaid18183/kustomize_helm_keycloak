@@ -1,0 +1,146 @@
+body {
+    height: max-content;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+    background: #001524;
+    background-blend-mode: soft-light;
+    background-size: 100% auto;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+div#kc-header-wrapper {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+    background-position: center;
+    margin-bottom: 40px;
+    text-indent: -9999px;
+}
+
+#username,
+#password {
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+    height: 45px;
+}
+
+#kc-page-title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.login-pf-page .login-pf-social-section {
+    flex: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.card-pf {
+    width: 480px;
+    margin: 0 auto;
+    background: #030303;
+    padding: 20px 60px;
+    border: 1px solid #2D81FF;
+}
+
+div#kc-form {
+    margin-top: 50px;
+}
+
+div#kc-form label {
+    color: #fff !important;
+    display: block;
+    font-size: 16px;
+}
+
+#kc-form-wrapper {
+    flex: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.form-group {
+    margin-bottom: 45px !important;
+}
+
+input[type=text],
+input[type=password] {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 45px;
+    border-width: 0 0 1px 0;
+    padding: 12px;
+    width: 90%;
+    margin-top: 5px;
+}
+
+#password {
+    margin-bottom: 30px;
+}
+
+div#kc-form-options label {
+    font-size: 16px;
+}
+
+.login-pf-settings a {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 43px;
+}
+
+input[type=submit] {
+    border: none;
+    background: #1C46A4;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    padding: 13px;
+    border-radius: 5px;
+    margin-top: 2em;
+    width: 32%;
+}
+
+div#kc-registration {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 2em;
+}
+
+#kc-social-providers {
+    border-left: none !important;
+    border-top: 1px solid #666 !important;
+    margin-top: 20px !important;
+    padding-top: 20px !important;
+    width: 100% !important;
+    padding-right: 40px !important;
+    max-width: 100% !important;
+}
+
+.login-pf-page .login-pf-social-link a {
+    background: #2D81FF !important;
+    text-align: center !important;
+    box-shadow: none !important;
+    color: #fff !important;
+}
+
+.login-pf-page .card-pf {
+    padding: 20px 40px 10px 40px !important;
+}

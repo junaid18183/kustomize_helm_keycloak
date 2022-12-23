@@ -1,0 +1,28 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: keycloak
+helmCharts:
+- name: keycloak
+  includeCRDs: true
+  valuesInline:
+    replicas: 1
+  releaseName: keycloak
+  version: 18.4.0
+  namespace: keycloak
+  repo: https://codecentric.github.io/helm-charts
+
+resources:
+- namespace.yaml
+
+patchesStrategicMerge:
+  - patches/kc-import.yaml
+
+configMapGenerator:
+  - name: demo-realm
+    files:
+      - realm.json
+  - name: login-theme
+    files:
+      - theme.css
+generatorOptions:
+  disableNameSuffixHash: true # use a static name for configmaps
