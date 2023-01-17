@@ -6,8 +6,10 @@ The `admin` password is set already to `admin` and there is a sample user named 
 
 The `demo` realm, has configured with a client authenticator.
 
+```
 CLIENT_SECRET: "rzap7hjeepSxiXsmEXqQNaY9uwvPqOb1"
 COOKIE_SECRET: "d3c1VGxTZmtwQzBURUFMZklVMXZUakZ2"
+```
 
 The installation also uses custom theme. See [theme.css](theme.css)
 
@@ -25,3 +27,7 @@ Since the keycloak is deployed as ClusterIP, you can use port-forward to access 
 ```
 kubectl port-forward svc/keycloak-http -n keycloak 30080:80
 ```
+
+# Sample Client UI
+
+http://localhost:30080/auth/realms/demo/account/#/security/signingin

@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: keycloak
+  name: keycloak-keycloakx
+  namespace: keycloak
 spec:
   template:
     spec:
@@ -13,9 +14,9 @@ spec:
         - name: KEYCLOAK_PASSWORD
           value: admin
         - name: KEYCLOAK_IMPORT
-          value: /realm/realm.json
+          value: /opt/keycloak/data/import/realm.json
         volumeMounts:
-        - mountPath: /realm/
+        - mountPath: /opt/keycloak/data/import
           name: demo-realm
           readOnly: true
         - name: login-theme
