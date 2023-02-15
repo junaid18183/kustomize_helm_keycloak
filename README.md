@@ -25,7 +25,7 @@ kustomize  build . --enable-helm  | kubectl apply -f
 Since the keycloak is deployed as ClusterIP, you can use port-forward to access the UI
 
 ```
-kubectl port-forward svc/keycloak-http -n keycloak 30080:80
+kubectl port-forward svc/keycloak-keycloakx-http -n keycloak 30080:80
 ```
 
 # Sample Client UI
