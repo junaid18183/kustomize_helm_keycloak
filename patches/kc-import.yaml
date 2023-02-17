@@ -33,3 +33,6 @@ spec:
           configMap:
             name: login-theme
             defaultMode: 0555
+            items:
+              - key: theme.css
+                path: login.css
