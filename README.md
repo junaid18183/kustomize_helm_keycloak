@@ -16,7 +16,7 @@ The installation also uses custom theme. See [theme.css](theme.css)
 # How to deploy
 
 ```
-kustomize  build . --enable-helm  | kubectl apply -f
+kustomize  build . --enable-helm  | kubectl apply -f -
 ```
 
 
